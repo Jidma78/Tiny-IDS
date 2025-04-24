@@ -29,7 +29,7 @@ logs concise, human-readable alerts.
 
 ```bash
 python -m pip install -r requirements.txt
-
+```
 
 ## 🚀 Quick start
 
@@ -44,14 +44,16 @@ python main.py          # choose interface when prompted
 2. Watch alerts in the console or open output/log/id.log.
 
 
-## ⚙️ Configuration (config.py)
+## ⚙️ Configuration — `config.py`
 
-Variable | Description | Default
-PORT_SCAN_THRESHOLD | Ports > N → raise SYN-scan | 30
-BRUTEFORCE_THRESHOLD | Conns > N on one port → raise brute-force | 200
-TIME_WINDOW | Sliding-window length (seconds) | 60
-ALERT_INTERVAL | Seconds between live updates during an incident | 10
-MY_LOCAL_IP | Fixed IP to protect (or None to pick at start) | None
+| **Variable**           | **Description**                                           | **Default**         |
+|------------------------|-----------------------------------------------------------|---------------------|
+| `PORT_SCAN_THRESHOLD`  | Ports > N → raise SYN-scan                                | `30`                |
+| `BRUTEFORCE_THRESHOLD` | Conns > N on one port → raise brute-force                 | `200`               |
+| `TIME_WINDOW`          | Sliding-window length (in seconds)                        | `60`                |
+| `ALERT_INTERVAL`       | Seconds between live updates during an ongoing incident   | `10`                |
+| `MY_LOCAL_IP`          | Fixed IP to protect (or `None` to auto-pick at startup)   | `None`              |
+| `LOG_FILE`             | Output path for plain-text logs                           | `output/log/ids.log` |
 
 
 Adjust these values to fit your network noise or attack simulation needs.
