@@ -27,17 +27,26 @@ logs concise, human-readable alerts.
 | scapy       | ≥ 2.5 |
 | netifaces   | ≥ 0.11 |
 
-```bash
-python -m pip install -r requirements.txt
-```
-
 ## 🚀 Quick start
 
 ```bash
 git clone https://github.com/<your-user>/tiny-ids.git
 cd tiny-ids
-python main.py          # choose interface when prompted
+python3 main.py          # choose interface when prompted
 ```
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate 
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+
+
+
 
 
 1. Run nmap or Hydra against the sensor to test.
