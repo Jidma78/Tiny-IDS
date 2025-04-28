@@ -31,8 +31,7 @@ logs concise, human-readable alerts.
 
 ```bash
 git clone https://github.com/<your-user>/tiny-ids.git
-cd tiny-ids
-python3 main.py          # choose interface when prompted
+cd tiny-ids          
 ```
 
 ```bash
@@ -42,6 +41,10 @@ source .venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+```
+
+```bash
+python3 main.py  # choose interface when prompted
 ```
 
 
